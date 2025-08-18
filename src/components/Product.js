@@ -14,7 +14,7 @@ const Products = () => {
     { label: 'Eye Care', href: 'product-portfolio/pharmaceuticals/eye-care-pharmaceuticals.html', img: '/Storage/category-uploads/01J93RE4T7H90WD6BERFYGRKHD.jpg' },
     { label: 'Oral Care', href: 'product-portfolio/pharmaceuticals/oral-care-pharmaceuticals.html', img: '/Storage/category-uploads/01J93RMMBHVNHXM7F2R1S5RMQN.jpg' },
     { label: 'Nasal Care', href: 'product-portfolio/pharmaceuticals/nasal-care-pharma.html', img: '/Storage/category-uploads/01J93RSP18KDZY1WGZAWG1QM9N.jpg' },
-    { label: 'Hair Care', href: 'product-portfolio/pharmaceuticals/hair-care%20pharmaceuticals.html', img: '/images/default-thumb.jpg' },
+    
   ];
 
   return (

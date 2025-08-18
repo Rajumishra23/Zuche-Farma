@@ -5,7 +5,7 @@ const GlobalPresence = () => (
         Our Global Presence
       </h2>
       <img
-        src="/Images/our-global-presence.jpg"
+        src="/images/our-global-presence.jpg"
         alt="global presence"
         className="w-full h-auto rounded-lg shadow-md"
       />

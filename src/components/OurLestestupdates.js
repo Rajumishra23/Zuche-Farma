@@ -12,7 +12,7 @@ const LatestUpdates = () => (
             className="block"
           >
             <img
-              src="/storage/blog-uploads/01J8HRFWQG8QY8TCN64BVY8QMK.jpg"
+              src="/Storage/blog-uploads/01J8HRFWQG8QY8TCN64BVY8QMK.jpg"
               alt="blog"
               className="w-full h-56 object-cover"
             />
