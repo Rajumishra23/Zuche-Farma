@@ -9,11 +9,11 @@ const Products = () => {
   ];
 
   const products = [
-    { label: 'Derma Care', href: 'product-portfolio/pharmaceuticals/Pharmaceutical.html', img: '/storage/category-uploads/01J93R3NXAH85X1MA10X8PK85G.jpg' },
-    { label: 'Ear Care', href: 'product-portfolio/pharmaceuticals/ear-care-pharmaceuticals.html', img: '/storage/category-uploads/01J93RASNJ156WQ5PS89FDDSYJ.jpg' },
-    { label: 'Eye Care', href: 'product-portfolio/pharmaceuticals/eye-care-pharmaceuticals.html', img: '/storage/category-uploads/01J93RE4T7H90WD6BERFYGRKHD.jpg' },
-    { label: 'Oral Care', href: 'product-portfolio/pharmaceuticals/oral-care-pharmaceuticals.html', img: '/storage/category-uploads/01J93RMMBHVNHXM7F2R1S5RMQN.jpg' },
-    { label: 'Nasal Care', href: 'product-portfolio/pharmaceuticals/nasal-care-pharma.html', img: '/storage/category-uploads/01J93RSP18KDZY1WGZAWG1QM9N.jpg' },
+    { label: 'Derma Care', href: 'product-portfolio/pharmaceuticals/Pharmaceutical.html', img: '/Storage/category-uploads/01J93R3NXAH85X1MA10X8PK85G.jpg' },
+    { label: 'Ear Care', href: 'product-portfolio/pharmaceuticals/ear-care-pharmaceuticals.html', img: '/Storage/category-uploads/01J93RASNJ156WQ5PS89FDDSYJ.jpg' },
+    { label: 'Eye Care', href: 'product-portfolio/pharmaceuticals/eye-care-pharmaceuticals.html', img: '/Storage/category-uploads/01J93RE4T7H90WD6BERFYGRKHD.jpg' },
+    { label: 'Oral Care', href: 'product-portfolio/pharmaceuticals/oral-care-pharmaceuticals.html', img: '/Storage/category-uploads/01J93RMMBHVNHXM7F2R1S5RMQN.jpg' },
+    { label: 'Nasal Care', href: 'product-portfolio/pharmaceuticals/nasal-care-pharma.html', img: '/Storage/category-uploads/01J93RSP18KDZY1WGZAWG1QM9N.jpg' },
     { label: 'Hair Care', href: 'product-portfolio/pharmaceuticals/hair-care%20pharmaceuticals.html', img: '/images/default-thumb.jpg' },
   ];
 

@@ -11,7 +11,7 @@ const Slider = () => {
         loop
         playsInline
       >
-        <source src="/videos/front-1-video.mp4" type="video/mp4" />
+        <source src="/Videos/front-1-video.mp4" type="video/mp4" />
       </video>
 
       {/* Mobile Video */}
@@ -22,7 +22,7 @@ const Slider = () => {
         loop
         playsInline
       >
-        <source src="/videos/front-1-video.mp4" type="video/mp4" />
+        <source src="/Videos/front-1-video.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay Content */}
