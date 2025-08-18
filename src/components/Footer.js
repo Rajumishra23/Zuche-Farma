@@ -11,9 +11,13 @@ const Footer = () => (
             className="w-40 mb-4"
           />
           <p className="text-sm leading-relaxed">
-            Corporate Office No: A-216 & A-217, Second Floor,<br />
-            Somdatt Chambers-1, Building No. 5,<br />
-            Bhikaji Cama Place, New Delhi-110066, India
+            Office add:
+42/309-A, Billochpura,
+Opp. Ration Office,
+ Agra (U.P.)
+Pin : 282002
+<br />
+
           </p>
           <p className="mt-2 text-sm">+91-11-41662311</p>
           <hr className="my-4 border-gray-700" />
@@ -50,7 +54,7 @@ const Footer = () => (
       <hr className="border-gray-700 mb-4" />
       <div className="text-center text-sm">
         <p>
-          &copy; 2025<span className="font-semibold text-white">Zuche Pharmaceuticals.</span> All Rights Reserved.
+          &copy; 2025 <span className="font-semibold text-white">Zuche Pharmaceuticals.</span> All Rights Reserved.
           <h2>Designed By Bigdesigned software limited</h2>
         </p>
       </div>

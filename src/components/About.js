@@ -6,24 +6,26 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
-          About Zuche Pharmaceuticals
+          About Agra Pharmaceutical
         </h2>
-        <img
-          src="/images/brush.png"
-          alt="brush"
-          className="w-24 mb-8"
-        />
+        <img src="/images/brush.png" alt="brush" className="w-24 mb-8" />
 
-        {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        {/* Grid Section — Doctor Image + Primary Text */}
+        <div className="grid md:grid-cols-2 gap-8 items-start mb-16">
           {/* Left Content */}
-          <div>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Established in 2010, Zuche Pharmaceuticals Private Limited is a most admired healthcare company dedicated to improving lives through a wide range of products in the pharmaceutical and medical device sectors that span the continuum of care.
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>
+              Agra Pharmaceutical Laboratories is a leading manufacturer and supplier of traditional and new generational API to the national pharmaceutical & chemical industry. We offer high-quality products at the best and most reasonable prices.
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              One of the fastest-growing healthcare companies, we take pride in offering high-quality, trusted products that treat pervasive and persistent health conditions around the world. Our robust quality assurance department ensures that all products meet the highest standards and international guidelines.
+            <p>
+              Founded in 1974, our company was built on the pillars of service, quality, and punctuality. Today, Agra Pharmaceutical Laboratories operates through four specialized divisions:
             </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Pharmaceutical Repacking Division</li>
+              <li>Marketing Division</li>
+              <li>Chemical Division</li>
+              <li>Formulation Division</li>
+            </ul>
             <a
               href="#"
               className="inline-block bg-primary text-white px-6 py-2 rounded-md font-medium hover:bg-primary-dark transition-all"
@@ -32,18 +34,50 @@ const About = () => {
             </a>
           </div>
 
-          {/* Right Images */}
-          <div className="relative">
-            <img
-              src="/images/about-1.webp"
-              alt="about-1"
-              className="w-full rounded-lg shadow-lg mb-4"
-            />
+          {/* Right Image — Doctor */}
+          <div>
             <img
               src="/images/doctor-1.webp"
               alt="doctor-1"
-              className="w-3/4 rounded-lg shadow-md absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="w-full h-[500px] rounded-lg shadow-lg"
             />
+          </div>
+        </div>
+
+        {/* Bottom Section — Remaining Text */}
+        <div className="bg-gray-50 p-8 rounded-lg shadow-inner">
+          <div className="max-w-3xl mx-auto space-y-6 text-gray-700 leading-relaxed">
+            <p>
+              Doing business with Agra Pharmaceutical Laboratories means gaining a reliable partner who offers knowledge, technical support, and consistent quality.
+            </p>
+            <p>
+              We are committed to producing and delivering products and services that exceed customer expectations. Our goal is accelerated growth through effective implementation of Quality Management Systems and delivering best value to our customers.
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Ensure quality & reliability at all times</li>
+              <li>Monitor product performance and customer satisfaction</li>
+              <li>Continuously improve product quality to uphold our global identity</li>
+            </ul>
+
+            <div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Vision</h3>
+              <p>
+                Our vision is to lead the Pharma and Chemical industry to every small and large company worldwide.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-red-600 mb-2">Mission</h3>
+              <p>
+                Our mission is to avail the product to every consumer through dealers in trade who require quality at the best price.
+              </p>
+            </div>
+
+            <a
+              href="#"
+              className="inline-block bg-primary text-white px-6 py-2 rounded-md font-medium hover:bg-primary-dark transition-all"
+            >
+              Read More
+            </a>
           </div>
         </div>
       </div>

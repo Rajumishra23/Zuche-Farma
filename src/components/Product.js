@@ -14,7 +14,6 @@ const Products = () => {
     { label: 'Eye Care', href: 'product-portfolio/pharmaceuticals/eye-care-pharmaceuticals.html', img: '/Storage/category-uploads/01J93RE4T7H90WD6BERFYGRKHD.jpg' },
     { label: 'Oral Care', href: 'product-portfolio/pharmaceuticals/oral-care-pharmaceuticals.html', img: '/Storage/category-uploads/01J93RMMBHVNHXM7F2R1S5RMQN.jpg' },
     { label: 'Nasal Care', href: 'product-portfolio/pharmaceuticals/nasal-care-pharma.html', img: '/Storage/category-uploads/01J93RSP18KDZY1WGZAWG1QM9N.jpg' },
-    
   ];
 
   return (
@@ -24,9 +23,20 @@ const Products = () => {
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Our Products</h2>
           <img src="/images/brush.png" alt="brush" className="mx-auto w-24 mb-4" />
-          <p className="max-w-2xl mx-auto">
-            At Zuche Pharma, we specialize in a diverse range of Medical Devices and pharmaceutical products.
+          <p className="max-w-2xl mx-auto leading-relaxed">
+            At Agra Pharmaceutical Laboratories, you are always assured of the best quality products.
+            We are committed to providing quality products with sincere service. We comply with the requirements of our quality standards, and every member of our team works toward continually improving processes to enhance customer satisfaction.
           </p>
+          <div className="mt-6 text-left max-w-xl mx-auto">
+            <h3 className="text-lg font-semibold mb-2">Our Divisions:</h3>
+            <ul className="list-disc pl-5 space-y-1 text-white">
+              <li>Pharmaceutical Repacking Division</li>
+              <li>Marketing Division</li>
+              <li>Chemical Division</li>
+              <li>Formulation Division</li>
+              <li>Surgical Division</li>
+            </ul>
+          </div>
         </div>
 
         {/* Tabs */}
