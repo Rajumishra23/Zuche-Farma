@@ -40,7 +40,7 @@ const LatestUpdates = () => (
             </h5>
 
             <p className="text-gray-700 mt-2">
-              Zuche Pharmaceuticals Private Limited, a company incorporate...
+              Agra Pharmaceuticals Private Limited, a company incorporate...
             </p>
 
             <hr className="my-4" />
@@ -48,7 +48,7 @@ const LatestUpdates = () => (
             <div className="flex items-center justify-between text-sm text-gray-600">
               <span className="flex items-center gap-1">
                 <img src="/icons/user.png" alt="user" className="w-4 h-4" />
-                Zuche Pharmaceuticals Pvt. Ltd.
+                Agra Pharmaceuticals Pvt. Ltd.
               </span>
               <a
                 href="blog/Upcoming%20Participation%20in%20Medica%202024-Dusseldorf%2C%20Germany%2011%20-%2014%20November%202024.html"

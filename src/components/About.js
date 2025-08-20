@@ -2,24 +2,20 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            About <span className="text-primary">Agra Pharmaceutical</span>
+        <div className="text-center mb-16 animate-fade-up">
+          <h2 className="text-4xl font-bold text-gray-800">
+             <span className="text-primary">Agra Pharmaceutical</span>
           </h2>
-          <img
-            src="/images/brush.png"
-            alt="decorative brush"
-            className="w-28 mx-auto mt-4 opacity-80"
-          />
+         
         </div>
 
-        {/* Grid Section — Doctor Image + Primary Text */}
-        <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
+        {/* Grid Section — Text + Image */}
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
           {/* Left Content */}
-          <div className="space-y-6 text-gray-700 leading-relaxed animate-fadeIn">
+          <div className="space-y-6 text-gray-700 leading-relaxed animate-fade-left">
             <p>
               Agra Pharmaceutical Laboratories is a leading manufacturer and supplier
               of traditional and next-generation API to the national pharmaceutical &
@@ -27,11 +23,11 @@ const About = () => {
               reasonable prices.
             </p>
             <p>
-              Founded in <strong>1974</strong>, our company was built on the pillars
-              of <span className="font-semibold text-primary">service</span>,{" "}
+              Founded in <strong>1974</strong>, our company was built on the pillars of{" "}
+              <span className="font-semibold text-primary">service</span>,{" "}
               <span className="font-semibold text-primary">quality</span>, and{" "}
-              <span className="font-semibold text-primary">punctuality</span>. Today,
-              we operate through four specialized divisions:
+              <span className="font-semibold text-primary">punctuality</span>. Today, we
+              operate through four specialized divisions:
             </p>
             <ul className="list-disc pl-5 space-y-1 marker:text-primary">
               <li>Pharmaceutical Repacking Division</li>
@@ -48,18 +44,18 @@ const About = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative group">
+          <div className="relative group animate-fade-right">
             <img
-              src="/images/doctor-1.webp"
+              src="About.png"
               alt="doctor"
-              className="w-full h-[500px] object-cover rounded-lg shadow-xl transform group-hover:scale-[1.02] transition-transform duration-300"
+              className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-xl transition-transform duration-500 group-hover:scale-105 group-hover:brightness-105"
             />
-            <div className="absolute inset-0 rounded-lg bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute inset-0 rounded-xl bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="bg-white p-10 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+        {/* Bottom Section — Glass Card */}
+        <div className="bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-lg hover:shadow-xl transition-shadow animate-fade-up">
           <div className="max-w-3xl mx-auto space-y-6 text-gray-700 leading-relaxed">
             <p>
               Partnering with Agra Pharmaceutical Laboratories means gaining a{" "}

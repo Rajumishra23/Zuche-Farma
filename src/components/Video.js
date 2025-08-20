@@ -8,18 +8,21 @@ const Video = () => {
           Innovating for a Healthier Future
         </h2>
         <p className="text-gray-700 mb-8 leading-relaxed">
-          At Zuche Pharmaceuticals, we are dedicated to advancing healthcare solutions globally. Watch our corporate video to learn more about our commitment to innovation, quality, and the well-being of communities worldwide.
+          At Agra Pharmaceuticals, we are dedicated to advancing healthcare solutions globally. Watch our corporate video to learn more about our commitment to innovation, quality, and the well-being of communities worldwide.
         </p>
 
-        <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.youtube.com/embed/dLd3GkPNEt0"
-            title="Zuche Corporate Video"
-            frameBorder="0"
-            allowFullScreen
-            className="w-full h-full"
-          ></iframe>
-        </div>
+       <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg">
+<video
+  src="/videos/front-1-video.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full h-full object-cover rounded-lg shadow-lg"
+>
+</video>
+
+</div>
       </div>
     </section>
   );

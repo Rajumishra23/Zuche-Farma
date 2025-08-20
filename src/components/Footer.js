@@ -81,10 +81,10 @@ const Footer = () => (
       <hr className="border-gray-700 mb-6" />
       <div className="flex flex-col md:flex-row justify-between items-center text-sm">
         <p>
-          &copy; 2025 <span className="font-semibold text-white">Zuche Pharmaceuticals.</span> All Rights Reserved.
+          &copy; 2025 <span className="font-semibold text-white">Agra Pharmaceuticals.</span> All Rights Reserved.
         </p>
         <p className="mt-3 md:mt-0">
-          Designed by <span className="text-primary font-semibold">Bigdesigned Software Limited</span>
+          Designed by <span className="text-white font-semibold">Bigdesign Software Limited</span>
         </p>
       </div>
     </div>

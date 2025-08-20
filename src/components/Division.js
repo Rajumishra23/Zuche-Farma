@@ -42,49 +42,43 @@ const divisions = [
 
 const Divisions = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">
-            Our Divisions
-          </h2>
-          <img
-            src="/images/brush.png"
-            alt="decorative"
-            className="mx-auto w-24 mb-6 opacity-80"
-          />
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-            We operate through specialized business divisions that cater to
-            different sectors of healthcare and chemical industries.
-          </p>
-        </div>
+    <section className="bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-stretch">
+        {/* Left Text Block */}
+        <div className="flex flex-col justify-between space-y-8 animate-fade-up">
+          <div>
+            <h2 className="text-4xl font-bold text-center text-slate-800 mb-6">
+              Our <span className="text-sky-600 text-center ">Divisions</span>
+            </h2>
 
-        {/* Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {divisions.map((division, index) => (
-            <div
-              key={index}
-              className="relative bg-white border-t-4 border-primary/80 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 text-center group"
-            >
-              {/* Icon */}
-              <div className="flex justify-center mb-6">
-                <div className="bg-primary/10 rounded-full p-4 group-hover:bg-primary/20 transition-colors duration-300">
-                  <division.icon className="h-12 w-12 text-primary group-hover:scale-110 transform transition-transform duration-300" />
+            {divisions.map((division, idx) => (
+              <div
+                key={idx}
+                className="flex items-start gap-4 mb-6 group transition-all duration-300 hover:scale-[1.02]"
+              >
+                <div className="w-12 h-12 flex items-center justify-center bg-sky-100 text-sky-600 rounded-xl group-hover:animate-pulse">
+                  <division.icon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-700 group-hover:text-sky-600 transition-colors duration-300">
+                    {division.title}
+                  </h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">
+                    {division.description}
+                  </p>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
 
-              {/* Title */}
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {division.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-gray-600 text-base leading-relaxed">
-                {division.description}
-              </p>
-            </div>
-          ))}
+        {/* Right Image Block */}
+        <div className="h-full animate-slide-in">
+          <img
+            src="1.png" 
+            alt="Our Divisions"
+            className="rounded-xl shadow-xl object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+          />
         </div>
       </div>
     </section>

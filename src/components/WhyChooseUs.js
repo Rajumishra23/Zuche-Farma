@@ -37,69 +37,43 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-sky-50/60 to-white py-28">
-      {/* Background Glow */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-32 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-sky-200/40 rounded-full blur-3xl opacity-30 animate-pulse-slow" />
-        <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-primary/10 rounded-full blur-2xl opacity-40" />
-      </div>
+    <section className="bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-stretch">
+        {/* Left Text Block */}
+        <div className="flex flex-col justify-between space-y-8 animate-fade-up">
+          <div>
+            <h2 className="text-4xl font-bold text-slate-800 mb-6">
+              Why <span className="text-sky-600">Choose Us?</span>
+            </h2>
 
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-snug">
-            <span className="bg-gradient-to-r from-primary to-sky-600 bg-clip-text text-transparent">
-              Why Choose Us?
-            </span>
-          </h2>
-          <p className="mt-6 text-gray-700 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            For over{" "}
-            <span className="font-semibold text-primary">five decades</span>, Agra
-            Pharmaceutical Laboratories has been a trusted partner, delivering
-            excellence with{" "}
-            <span className="font-medium text-primary">quality</span>,{" "}
-            <span className="font-medium text-primary">service</span>, and{" "}
-            <span className="font-medium text-primary">innovation</span> at its core.
-          </p>
-        </div>
-
-        {/* Feature Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-24">
-          {features.map((feature, idx) => (
-            <div
-              key={idx}
-              className="bg-gradient-to-br from-white via-sky-50 to-white border border-gray-200 shadow-lg rounded-2xl p-8 text-center transition duration-300 hover:scale-[1.03] hover:shadow-xl"
-            >
-              <div className="flex justify-center mb-6">
-                <div className="bg-primary/10 p-4 rounded-full">
-                  <feature.icon className="h-10 w-10 text-primary" />
+            {features.map((feature, idx) => (
+              <div
+                key={idx}
+                className="flex items-start gap-4 mb-6 group transition-all duration-300 hover:scale-[1.02]"
+              >
+                <div className="w-12 h-12 flex items-center justify-center bg-sky-100 text-sky-600 rounded-xl group-hover:animate-pulse">
+                  <feature.icon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-700 group-hover:text-sky-600 transition-colors duration-300">
+                    {feature.title}
+                  </h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">
+                    {feature.desc}
+                  </p>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">{feature.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* Commitment Block */}
-        <div className="relative max-w-4xl mx-auto">
-          <div className="absolute inset-0 rounded-3xl border border-primary/30 bg-gradient-to-r from-primary/10 via-sky-100/30 to-primary/10 blur-xl opacity-50" />
-          <div className="relative bg-white/90 backdrop-blur-lg border border-gray-200 shadow-xl rounded-3xl p-10 text-center transition-transform duration-300 hover:scale-[1.02]">
-            <p className="text-xl text-gray-800 mb-6 leading-relaxed">
-              <span className="font-bold text-primary">Our Commitment:</span> We
-              continually monitor performance, refine processes, and ensure reliability
-              at every step — striving to remain a{" "}
-              <span className="font-semibold text-primary">
-                globally recognized pharmaceutical leader
-              </span>
-              .
-            </p>
-            <p className="text-primary font-medium text-lg mt-4">
-              👉 Explore our Divisions and Products to learn more.
-            </p>
-          </div>
+        {/* Right Image Block */}
+        <div className="h-full animate-slide-in">
+          <img
+            src="pharma.png" // Make sure this image is HD and placed correctly
+            alt="Why Choose Us"
+            className="rounded-xl shadow-xl object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+          />
         </div>
       </div>
     </section>

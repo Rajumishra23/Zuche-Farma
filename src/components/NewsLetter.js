@@ -22,7 +22,7 @@ const Newsletter = () => {
           <div className="text-white">
             <h4 className="text-xl md:text-2xl font-bold mb-1">Our Newsletter</h4>
             <p className="text-sm md:text-base">
-              Stay informed with the latest updates and innovations from Zuche Pharmaceuticals!
+              Stay informed with the latest updates and innovations from Agra Pharmaceuticals!
             </p>
           </div>
         </div>
