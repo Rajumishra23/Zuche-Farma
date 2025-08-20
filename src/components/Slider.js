@@ -23,7 +23,7 @@ const Slider = () => {
         <img
           src={images[current]}
           alt={`Slide ${current + 1}`}
-          className="w-full h-full object-cover brightness-90" 
+          className="w-full h-[800px] object-cover brightness-90" 
         />
       </div>
 
