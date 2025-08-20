@@ -5,7 +5,7 @@ const MobileHeader = () => {
     <div className="bg-white shadow-md px-4 py-2 flex justify-between items-center md:hidden">
       {/* Logo */}
       <a href="/">
-        <img src="/Images/logo.jpg" alt="logo" className="h-8" />
+        <img src="Agra.png" alt="logo" className="h-8" />
       </a>
 
       {/* Buttons */}

@@ -1,54 +1,95 @@
-import React from 'react';
+import React from "react";
+import { ShieldCheckIcon, ClipboardDocumentCheckIcon, ChartBarIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const QualityAssurance = () => {
   return (
-    <section className="relative bg-white py-16 overflow-hidden">
-      {/* Watermark Image */}
+    <section className="relative bg-gray-50 py-20 overflow-hidden">
+      {/* Watermark Image (subtle background) */}
       <img
         src="/images/mmg.png"
         alt="watermark"
-        className="absolute top-1 left-2  opacity-80 pointer-events-none"
+        className="absolute top-20 left-10 w-56 opacity-5 pointer-events-none select-none"
       />
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">Quality Assurance</h2>
-        <img src="/images/brush.png" alt="brush" className="w-24 mb-6" />
-        <p className="text-lg text-gray-700 mb-10 leading-relaxed text-center">
-          Key Element of Quality Assurance in the <br /> Pharma Industry
-        </p>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">
+            Quality Assurance
+          </h2>
+          <img
+            src="/images/brush.png"
+            alt="brush"
+            className="mx-auto w-24 my-4"
+          />
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Quality has been our cornerstone since <strong>1974</strong>. 
+            We have implemented a robust <strong>Quality Management System (QMS)</strong> 
+            to ensure all products meet the highest standards.
+          </p>
+        </div>
 
-        {/* Content Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Left Column */}
-          <div className="space-y-6 text-gray-700 leading-relaxed">
-            <p>
-              We remain committed to the highest levels of quality and will ensure that all our manufacturing facilities continue to meet the exemplary standards of a global pharmaceutical company.
-            </p>
-            <p>
-              Our Quality management team therefore uses quality assurance and control of processes as well as products to achieve the most consistent quality possible.
-            </p>
-            <p>
-              Our operations are driven by superior technology and processes, abiding by all major stringent regulatory approvals. Our motto for quality goes beyond business and statutory requirements. Our commitment to implementing a robust global quality management system is based on our determination to sustain a culture of operational excellence, meeting and exceeding the expectations of all stakeholders, including patients, customers and regulators.
-            </p>
-          </div>
-
-          {/* Right Column */}
-          <div>
-            <h3 className="text-xl font-semibold text-red mb-4">Certified by</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src="/images/GMP.jpg"
-                alt="GMP"
-                className="rounded-lg shadow-md w-full object-cover"
-              />
-              <img
-                src="/images/mhra-sym.jpg"
-                alt="MHRA"
-                className="rounded-lg shadow-md w-full object-cover"
-              />
+        {/* Cards Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Card 1 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div className="flex items-center justify-center mb-6">
+              <ShieldCheckIcon className="h-12 w-12 text-primary" />
             </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+              Rigorous Testing
+            </h3>
+            <p className="text-gray-600 text-center">
+              Rigorous product testing at every stage to ensure safety and consistency.
+            </p>
           </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div className="flex items-center justify-center mb-6">
+              <ClipboardDocumentCheckIcon className="h-12 w-12 text-primary" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+              QC & QA Teams
+            </h3>
+            <p className="text-gray-600 text-center">
+              Dedicated Quality Control & Quality Assurance teams ensure reliability.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div className="flex items-center justify-center mb-6">
+              <CheckCircleIcon className="h-12 w-12 text-primary" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+              Global Standards
+            </h3>
+            <p className="text-gray-600 text-center">
+              Compliance with pharmacopeia standards (IP, BP, USP) for global trust.
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div className="flex items-center justify-center mb-6">
+              <ChartBarIcon className="h-12 w-12 text-primary" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+              Continuous Improvement
+            </h3>
+            <p className="text-gray-600 text-center">
+              Continuous process improvement to exceed customer expectations.
+            </p>
+          </div>
+        </div>
+
+        {/* Closing Statement */}
+        <div className="mt-16 max-w-3xl mx-auto text-center">
+          <p className="text-lg text-gray-700 font-medium">
+            Our focus on <span className="text-primary font-semibold">safety, reliability, and performance</span> 
+            has made us a trusted name in the industry.
+          </p>
         </div>
       </div>
     </section>

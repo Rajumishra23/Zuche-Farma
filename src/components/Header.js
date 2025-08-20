@@ -47,7 +47,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Left: Logo */}
         <a href="index.htm" className="flex items-center">
-          <img src="/images/logo.jpg" className="h-10 object-contain" alt="logo" />
+          <img src="Agra1.png" className="h-16 object-contain" alt="logo" />
         </a>
 
         {/* Right: Menu */}

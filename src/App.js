@@ -12,6 +12,11 @@ import GlobalPresence from './components/GlobalPresence';
 import OurLetestUpdates from './components/OurLestestupdates';
 import NewsLetter from './components/NewsLetter';
 import Footer from './components/Footer';
+import WhyChooseUs from './components/WhyChooseUs';
+import Division from './components/Division';
+import Careers from './components/Career';
+import Feedback from './components/Feedback';
+
 
 function App() {
   return (
@@ -22,12 +27,16 @@ function App() {
      
        <Header/>
         <Slider/>
+        <WhyChooseUs/>
         <About/>
+        <Division/>
+       <QualityAssurance/>
+       <Careers/>
         <Video/>
         <Product/>
-        <QualityAssurance/>
         <GlobalPresence/>
         <OurLetestUpdates/>
+        <Feedback/>
         <NewsLetter/>
         <Footer/>
     </div>

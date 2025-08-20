@@ -10,7 +10,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="bg-red-700 py-12">
+    <section className="bg-black py-12">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
         {/* Left Side */}
         <div className="flex items-center gap-4">
