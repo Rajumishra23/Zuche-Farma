@@ -13,7 +13,7 @@ const Video = () => {
 
        <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg">
 <video
-  src="/videos/front-1-video.mp4"
+  src="/Videos/front-1-video.mp4"
   autoPlay
   muted
   loop

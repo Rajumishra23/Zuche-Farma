@@ -9,7 +9,7 @@ const Header = () => {
       label: "About",
       href: "about-us.html",
       subItems: [
-        { label: "About Zuche", href: "about-us.html#about" },
+        { label: "About Agra", href: "about-us.html#about" },
         { label: "Mission & Vision", href: "about-us.html#mission" },
         { label: "Board of Directors", href: "about-us.html#board" },
         { label: "Business Model", href: "about-us.html#business" },
@@ -38,7 +38,7 @@ const Header = () => {
       label: "Career",
       href: "career.html",
       subItems: [
-        { label: "Growing with Zuche", href: "career.html#Grow2" },
+        { label: "Growing with Agra", href: "career.html#Grow2" },
         { label: "Openings", href: "openings.html" },
       ],
     },
