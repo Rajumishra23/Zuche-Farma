@@ -17,11 +17,7 @@ const QualityAssurance = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
             Quality Assurance
           </h2>
-          <img
-            src="/images/brush.png"
-            alt="brush"
-            className="mx-auto w-24 my-4"
-          />
+         <br></br>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Quality has been our cornerstone since <strong>1974</strong>. 
             We have implemented a robust <strong>Quality Management System (QMS)</strong> 

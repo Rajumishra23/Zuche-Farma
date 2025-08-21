@@ -27,8 +27,8 @@ function App() {
      
        <Header/>
         <Slider/>
-        <WhyChooseUs/>
-        <About/>
+         <About/>
+         <WhyChooseUs/>
         <Division/>
        <QualityAssurance/>
        <Careers/>

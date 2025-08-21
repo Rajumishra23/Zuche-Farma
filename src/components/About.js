@@ -7,46 +7,47 @@ const About = () => {
         {/* Heading */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl font-bold text-gray-800">
-             <span className="text-primary">Agra Pharmaceutical</span>
+            <span className="text-blue-600">Agra Pharmaceutical</span>
           </h2>
-         
         </div>
 
-        {/* Grid Section — Text + Image */}
+        {/* Grid Section — Text Box + Image */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-          {/* Left Content */}
-          <div className="space-y-6 text-gray-700 leading-relaxed animate-fade-left">
-            <p>
-              Agra Pharmaceutical Laboratories is a leading manufacturer and supplier
-              of traditional and next-generation API to the national pharmaceutical &
-              chemical industry. We ensure high-quality products at the best and most
-              reasonable prices.
-            </p>
-            <p>
-              Founded in <strong>1974</strong>, our company was built on the pillars of{" "}
-              <span className="font-semibold text-primary">service</span>,{" "}
-              <span className="font-semibold text-primary">quality</span>, and{" "}
-              <span className="font-semibold text-primary">punctuality</span>. Today, we
-              operate through four specialized divisions:
-            </p>
-            <ul className="list-disc pl-5 space-y-1 marker:text-primary">
-              <li>Pharmaceutical Repacking Division</li>
-              <li>Marketing Division</li>
-              <li>Chemical Division</li>
-              <li>Formulation Division</li>
-            </ul>
-            <a
-              href="#"
-              className="inline-block bg-primary text-white px-6 py-2 rounded-md font-medium shadow-md hover:shadow-lg hover:bg-primary-dark transition-all"
-            >
-              Read More
-            </a>
+          {/* Left Content — Boxed with Animation */}
+          <div className="bg-white/90 backdrop-blur-md p-7 rounded-xl shadow-lg animate-slideLeftFade transition-all duration-700">
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              <p>
+                Agra Pharmaceutical Laboratories is a leading manufacturer and supplier
+                of traditional and next-generation API to the national pharmaceutical &
+                chemical industry. We ensure high-quality products at the best and most
+                reasonable prices.
+              </p>
+              <p>
+                Founded in <strong>1974</strong>, our company was built on the pillars of{" "}
+                <span className="font-semibold text-primary">service</span>,{" "}
+                <span className="font-semibold text-primary">quality</span>, and{" "}
+                <span className="font-semibold text-primary">punctuality</span>. Today, we
+                operate through four specialized divisions:
+              </p>
+              <ul className="list-disc pl-5 space-y-1 marker:text-primary">
+                <li>Pharmaceutical Repacking Division</li>
+                <li>Marketing Division</li>
+                <li>Chemical Division</li>
+                <li>Formulation Division</li>
+              </ul>
+              <a
+                href="#"
+                className="inline-block bg-primary text-white px-6 py-2 rounded-md font-medium shadow-md hover:shadow-lg hover:bg-primary-dark transition-all"
+              >
+                Read More
+              </a>
+            </div>
           </div>
 
           {/* Right Image */}
           <div className="relative group animate-fade-right">
             <img
-              src="About.png"
+              src="A.png"
               alt="doctor"
               className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-xl transition-transform duration-500 group-hover:scale-105 group-hover:brightness-105"
             />
