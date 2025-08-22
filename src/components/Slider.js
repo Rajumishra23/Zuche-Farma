@@ -1,27 +1,6 @@
-import React, { useState, useEffect } from 'react';
-
-const images = [
-  'R2.png',
-  'R1.png',
-  'R3.png',
-  'R4.png',
-];
+import React from 'react';
 
 const PharmaSlider = () => {
-  const [current, setCurrent] = useState(0);
-  const [fade, setFade] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setCurrent((prev) => (prev + 1) % images.length);
-        setFade(true);
-      }, 500);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950">
 
@@ -34,23 +13,24 @@ const PharmaSlider = () => {
         </div>
       </div>
 
-      {/* 🖼️ Full-Height Image Slide */}
-      <div className="absolute inset-0 w-full h-full transition-all duration-700 ease-in-out">
-        <img
-          src={images[current]}
-          alt={`Slide ${current + 1}`}
+      {/* 🎥 Fixed Fullscreen Video Background */}
+      <div className="absolute inset-0 w-full h-full transition-all duration-700 ease-in-out z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute inset-0 w-full h-full object-cover brightness-90"
-        />
+        >
+          <source src="/Videos/Header.mp4" type="Video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="absolute inset-0 bg-white/10 mix-blend-screen pointer-events-none"></div>
       </div>
 
       {/* 🧥 Overlay Content */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-10 flex items-center justify-start">
-        <div
-          className={`ml-8 md:ml-16 max-w-4xl text-left transform transition-all duration-700 ease-in-out ${
-            fade ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'
-          }`}
-        >
+        <div className="ml-8 md:ml-16 max-w-4xl text-left transition-all duration-700 ease-in-out opacity-100 translate-x-0">
           <p className="text-sm tracking-[1px] text-cyan-300 uppercase mb-3">
             Trusted Healthcare Partner
           </p>
