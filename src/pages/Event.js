@@ -6,7 +6,7 @@ const events = [
     title: "PharmaTech Expo 2025",
     date: "March 12–14, 2025",
     location: "Mumbai, India",
-    image: "event.png",
+    image: "Event.png",
     description:
       "Showcased our latest APIs and formulations to over 10,000 industry professionals.",
   },
@@ -14,7 +14,7 @@ const events = [
     title: "Global GMP Summit",
     date: "June 5, 2025",
     location: "Berlin, Germany",
-    image: "event1.png",
+    image: "Event1.png",
     description:
       "Panel discussion on quality assurance and regulatory compliance in emerging markets.",
   },
