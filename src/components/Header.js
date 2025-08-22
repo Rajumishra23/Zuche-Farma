@@ -78,7 +78,7 @@ const Header = () => {
       {/* 🔹 Main Header */}
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
-          <img src="Agra3.webp" className="h-10 object-contain" alt="Agra Pharma logo" />
+          <img src="Agra3.webp" className="h-14 md:h-16 object-contain transition-all duration-300" alt="Agra Pharma logo" />
         </NavLink>
 
         {/* 🔹 Desktop Nav */}
@@ -102,12 +102,12 @@ const Header = () => {
 
               {/* 🔹 Submenu (Desktop) */}
               {item.subItems && (
-                <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md py-2 w-52 hidden group-hover:block z-50">
+                <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md py-2 w-52 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-300 z-50">
                   {item.subItems.map((subItem, subIndex) =>
                     renderLink(
                       subItem.href,
                       subItem.label,
-                      "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:pl-5 transition-all duration-200"
                     )
                   )}
                 </div>
