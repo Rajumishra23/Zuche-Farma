@@ -81,7 +81,7 @@ const Header = () => {
           <div className="h-12 w-auto flex items-center">
             <img
               src="Agra3.webp"
-              className="h-30 w-auto object-contain -my-4"
+              className="h-20 w-auto object-contain -my-4"
               alt="Agra Pharma logo"
             />
           </div>
