@@ -17,7 +17,7 @@ const About = () => {
           <div className="bg-white/90 backdrop-blur-md p-7 rounded-xl shadow-lg animate-slideLeftFade transition-all duration-700">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Agra Pharmaceutical Laboratories is a leading manufacturer and supplier
+                <strong>Agra Pharmaceutical Laboratories</strong> is a leading manufacturer and supplier
                 of traditional and next-generation API to the national pharmaceutical &
                 chemical industry. We ensure high-quality products at the best and most
                 reasonable prices.

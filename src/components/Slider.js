@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const images = [
-  'H1.png',
-  'H2.png',
-  'H3.png',
-  'H4.png',
+  'R2.png',
+  'R1.png',
+  'R3.png',
+  'R4.png',
 ];
 
 const PharmaSlider = () => {
@@ -23,8 +23,8 @@ const PharmaSlider = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[600px] overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950">
-      
+    <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950">
+
       {/* 🔁 Marquee */}
       <div className="absolute top-0 left-0 w-full z-30 bg-black/30">
         <div className="overflow-hidden whitespace-nowrap">
@@ -34,17 +34,17 @@ const PharmaSlider = () => {
         </div>
       </div>
 
-      {/* 🔄 Image Slide with Light Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full transition-all duration-700 ease-in-out">
+      {/* 🖼️ Full-Height Image Slide */}
+      <div className="absolute inset-0 w-full h-full transition-all duration-700 ease-in-out">
         <img
           src={images[current]}
           alt={`Slide ${current + 1}`}
-          className="w-full h-full object-cover brightness-90"
+          className="absolute inset-0 w-full h-full object-cover brightness-90"
         />
         <div className="absolute inset-0 bg-white/10 mix-blend-screen pointer-events-none"></div>
       </div>
 
-      {/* 🧥 Overlay Content with Enhanced Transition */}
+      {/* 🧥 Overlay Content */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-10 flex items-center justify-start">
         <div
           className={`ml-8 md:ml-16 max-w-4xl text-left transform transition-all duration-700 ease-in-out ${
@@ -55,7 +55,7 @@ const PharmaSlider = () => {
             Trusted Healthcare Partner
           </p>
 
-          <h1 className="text-white text-3xl md:text-3xl font-bold leading-snug mb-4">
+          <h1 className="text-white text-3xl md:text-4xl font-bold leading-snug mb-4">
             Empowering Wellness <br />
             Through Science & <br />
             <span className="text-cyan-300">Compassionate Care</span>
