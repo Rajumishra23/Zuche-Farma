@@ -1,45 +1,41 @@
-import React from 'react';
-import './App.css';
-import Topbar from './components/Topbar';
-import Mobileheader from './components/Mobileheader';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Slider from './components/Slider';
-import About from './components/About';
-import Video from './components/Video';
-import Product from './components/Product';
-import QualityAssurance from './components/QualityAssurence';
-import GlobalPresence from './components/GlobalPresence';
-import OurLetestUpdates from './components/OurLestestupdates';
-import NewsLetter from './components/NewsLetter';
 import Footer from './components/Footer';
-import WhyChooseUs from './components/WhyChooseUs';
-import Division from './components/Division';
-import Careers from './components/Career';
-import Feedback from './components/Feedback';
+import Mobileheader from './components/Mobileheader';
+import Topbar from './components/Topbar';
+
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Product from './pages/Product';
+import  Quality from './pages/Quality';
+import  Event from './pages/Event';
+import Career from './pages/Career';
+import GlobalPresence from './pages/GlobalPresence';
+import Contact from './pages/Contact';
 
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Topbar />
       <Mobileheader />
-     
-     
-       <Header/>
-        <Slider/>
-         <About/>
-         <WhyChooseUs/>
-        <Division/>
-       <QualityAssurance/>
-       <Careers/>
-        <Video/>
-        <Product/>
-        <GlobalPresence/>
-        <OurLetestUpdates/>
-        <Feedback/>
-        <NewsLetter/>
-        <Footer/>
-    </div>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/Quality" element={<Quality />} />
+        <Route path="/Event" element={<Event />} />
+        <Route path="/Career" element={<Career />} />
+        <Route path="/worldwide" element={<GlobalPresence />} />
+        <Route path="/contact" element={<Contact />} />
+        
+      </Routes>
+
+      <Footer />
+    </Router>
   );
 }
 

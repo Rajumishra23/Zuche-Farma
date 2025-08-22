@@ -1,48 +1,71 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const menuItems = [
+    { label: "Home", href: "/" },
     {
       label: "About",
-      href: "about-us.html",
+      href: "/about",
       subItems: [
-        { label: "About Agra", href: "about-us.html#about" },
-        { label: "Mission & Vision", href: "about-us.html#mission" },
-        { label: "Board of Directors", href: "about-us.html#board" },
-        { label: "Business Model", href: "about-us.html#business" },
+        { label: "About Agra", href: "/about#about" },
+        { label: "Mission & Vision", href: "/about#mission" },
+        { label: "Board of Directors", href: "/about#board" },
+        { label: "Business Model", href: "/about#business" },
       ],
     },
     {
       label: "Product",
-      href: "#",
+      href: "/product",
       subItems: [
-        { label: "Medical Devices", href: "product-portfolio/medical-devices.html" },
-        { label: "Pharmaceuticals", href: "product-portfolio/pharmaceuticals.html" },
+        { label: "Medical Devices", href: "/product/medical-devices" },
+        { label: "Pharmaceuticals", href: "/product/pharmaceuticals" },
       ],
     },
     {
       label: "Quality",
-      href: "#",
+      href: "/quality",
       subItems: [
-        { label: "Quality Policy", href: "quality-policy.html" },
-        { label: "Certifications & Approvals", href: "certificates-awards.html" },
+        { label: "Quality Policy", href: "/quality/policy" },
+        { label: "Certifications & Approvals", href: "/quality/certificates" },
       ],
     },
-    { label: "Presence", href: "worldwide.html" },
-    { label: "Events", href: "events.html" },
-    { label: "Manufacturing", href: "manufactures.html" },
+    { label: "Presence", href: "/worldwide" },
+    { label: "Events", href: "/Event" },
+    { label: "Manufacturing", href: "/manufactures" },
     {
       label: "Career",
-      href: "career.html",
+      href: "/career",
       subItems: [
-        { label: "Growing with Agra", href: "career.html#Grow2" },
-        { label: "Openings", href: "openings.html" },
+        { label: "Growing with Agra", href: "/career#Grow2" },
+        { label: "Openings", href: "/career/openings" },
       ],
     },
   ];
+
+  const renderLink = (href, label, className = "") => {
+    const isHash = href.includes("#");
+    const Component = isHash ? HashLink : NavLink;
+    return (
+      <Component
+        to={href}
+        className={(props) => {
+          const isActive = props?.isActive;
+          return `${className} transition duration-200 ${
+            isActive ? "text-blue-600 font-semibold" : "hover:text-blue-600"
+          }`;
+        }}
+        smooth
+        aria-label={label}
+      >
+        {label}
+      </Component>
+    );
+  };
 
   return (
     <header className="w-full fixed top-0 z-50 bg-gradient-to-r from-gray-100 via-white to-gray-100 shadow-md">
@@ -54,23 +77,20 @@ const Header = () => {
 
       {/* 🔹 Main Header */}
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="index.htm" className="flex items-center">
-          <img src="Agra1.png" className="h-10 object-contain" alt="logo" />
-        </a>
+        <NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
+          <img src="Agra3.webp" className="h-10 object-contain" alt="Agra Pharma logo" />
+        </NavLink>
 
         {/* 🔹 Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
           {menuItems.map((item, index) => (
             <div key={index} className="relative group">
-              <a
-                href={item.href}
-                className="flex items-center gap-1 hover:text-blue-600 transition duration-200"
-              >
-                {item.label}
+              <div className="flex items-end gap-1">
+                {renderLink(item.href, item.label, "inline-block")}
                 {item.subItems && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-3 h-3 text-gray-500 group-hover:rotate-180 transition-transform"
+                    className="w-3 h-3 text-gray-500 mb-[2px] group-hover:rotate-180 transition-transform"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -78,31 +98,30 @@ const Header = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 )}
-              </a>
+              </div>
+
+              {/* 🔹 Submenu (Desktop) */}
               {item.subItems && (
                 <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md py-2 w-52 hidden group-hover:block z-50">
-                  {item.subItems.map((subItem, subIndex) => (
-                    <a
-                      key={subIndex}
-                      href={subItem.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition"
-                    >
-                      {subItem.label}
-                    </a>
-                  ))}
+                  {item.subItems.map((subItem, subIndex) =>
+                    renderLink(
+                      subItem.href,
+                      subItem.label,
+                      "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    )
+                  )}
                 </div>
               )}
             </div>
           ))}
 
           {/* 🔹 Contact Button */}
-          <a
-            href="contact-us.html"
+          <NavLink
+            to="/contact"
             className="block w-full text-center px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow hover:bg-teal-700 transition"
-
           >
             Contact
-          </a>
+          </NavLink>
         </nav>
 
         {/* 🔹 Mobile Menu Button */}
@@ -131,6 +150,8 @@ const Header = () => {
                 <button
                   onClick={() => setOpenDropdown(openDropdown === index ? null : index)}
                   className="w-full flex justify-between items-center px-4 py-3 text-gray-700 font-semibold"
+                  aria-haspopup="true"
+                  aria-expanded={openDropdown === index}
                 >
                   {item.label}
                   {item.subItems && (
@@ -148,15 +169,14 @@ const Header = () => {
 
                 {/* Mobile Submenu */}
                 {item.subItems && openDropdown === index && (
-                  <ul className="bg-gray-100">
+                  <ul className="bg-gray-100 transition-all duration-300 ease-in-out">
                     {item.subItems.map((subItem, subIndex) => (
                       <li key={subIndex}>
-                        <a
-                          href={subItem.href}
-                          className="block px-8 py-2 text-sm text-gray-600 hover:bg-gray-200 transition"
-                        >
-                          {subItem.label}
-                        </a>
+                        {renderLink(
+                          subItem.href,
+                          subItem.label,
+                          "block px-8 py-2 text-sm text-gray-600 hover:bg-gray-200"
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -166,13 +186,12 @@ const Header = () => {
 
             {/* 🔹 Mobile Contact Button */}
             <li className="border-b border-gray-200 px-4 py-3">
-              <a
-                href="contact-us.html"
+              <NavLink
+                to="/contact"
                 className="block w-full text-center px-4 py-2 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 text-white font-semibold rounded-md shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
-
               >
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
