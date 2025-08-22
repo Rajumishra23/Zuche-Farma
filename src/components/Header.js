@@ -7,45 +7,44 @@ const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const menuItems = [
-    { label: "Home", href: "/" },
-    {
-      label: "About",
-      href: "/about",
-      subItems: [
-        { label: "About Agra", href: "/about#about" },
-        { label: "Mission & Vision", href: "/about#mission" },
-        { label: "Board of Directors", href: "/about#board" },
-        { label: "Business Model", href: "/about#business" },
-      ],
-    },
-    {
-      label: "Product",
-      href: "/product",
-      subItems: [
-        { label: "Medical Devices", href: "/product/medical-devices" },
-        { label: "Pharmaceuticals", href: "/product/pharmaceuticals" },
-      ],
-    },
-    {
-      label: "Quality",
-      href: "/quality",
-      subItems: [
-        { label: "Quality Policy", href: "/quality/policy" },
-        { label: "Certifications & Approvals", href: "/quality/certificates" },
-      ],
-    },
-    { label: "Presence", href: "/worldwide" },
-    { label: "Events", href: "/Event" },
-    { label: "Manufacturing", href: "/manufactures" },
-    {
-      label: "Career",
-      href: "/career",
-      subItems: [
-        { label: "Growing with Agra", href: "/career#Grow2" },
-        { label: "Openings", href: "/career/openings" },
-      ],
-    },
-  ];
+  {
+    label: "About Us",
+    href: "/about",
+    subItems: [
+      { label: "About Agra", href: "/about#about" },
+      { label: "Mission & Vision", href: "/about#mission" },
+      { label: "Board of Directors", href: "/about#board" },
+      { label: "Business Model", href: "/about#business" },
+    ],
+  },
+  {
+    label: "Product Portfolio",
+    href: "/product",
+    subItems: [
+      { label: "Medical Devices", href: "/product/medical-devices" },
+      { label: "Pharmaceuticals", href: "/product/pharmaceuticals" },
+    ],
+  },
+  {
+    label: "Quality",
+    href: "/quality",
+    subItems: [
+      { label: "Quality Policy", href: "/quality/policy" },
+      { label: "Certifications & Approvals", href: "/quality/certificates" },
+    ],
+  },
+  { label: "Our Presence", href: "/worldwide" },
+  { label: "Events", href: "/event" },
+  { label: "Manufacturing Unit", href: "/manufactures" },
+  {
+    label: "Career",
+    href: "/career",
+    subItems: [
+      { label: "Growing with Agra", href: "/career#Grow2" },
+      { label: "Openings", href: "/career/openings" },
+    ],
+  },
+];
 
   const renderLink = (href, label, className = "") => {
     const isHash = href.includes("#");
@@ -71,7 +70,7 @@ const Header = () => {
     <header className="w-full fixed top-0 z-50 bg-gradient-to-r from-gray-100 via-white to-gray-100 shadow-md">
       {/* 🔹 Top Bar */}
       <div className="bg-gray-200 text-gray-800 text-xs sm:text-sm py-1 px-6 flex justify-between font-medium">
-        <p>📞 +91 9876543210</p>
+        <p>📞123346767</p>
         <p>✉️ agrapharma@live.com</p>
       </div>
 
@@ -80,8 +79,8 @@ const Header = () => {
         <NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
           <div className="h-12 w-auto flex items-center">
             <img
-              src="Agra3.webp"
-              className="h-20 w-auto object-contain -my-4"
+              src="AL.webp"
+              className="h-40 w-auto object-contain -my-4"
               alt="Agra Pharma logo"
             />
           </div>

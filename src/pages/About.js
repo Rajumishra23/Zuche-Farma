@@ -25,46 +25,41 @@ const About = () => {
         {/* Grid Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
           {/* Left Content */}
-          <motion.div
-            variants={fadeVariant}
-            className="bg-white/90 backdrop-blur-md p-7 rounded-xl shadow-lg"
-          >
-            <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p>
-                <strong>Agra Pharmaceutical Laboratories</strong> is a leading
-                manufacturer and supplier of traditional and next-generation API
-                to the national pharmaceutical & chemical industry. We ensure
-                high-quality products at the best and most reasonable prices.
-              </p>
-              <p>
-                Founded in <strong>1974</strong>, our company was built on the
-                pillars of{" "}
-                <span className="font-semibold text-primary">service</span>,{" "}
-                <span className="font-semibold text-primary">quality</span>, and{" "}
-                <span className="font-semibold text-primary">punctuality</span>.
-                Today, we operate through four specialized divisions:
-              </p>
-              <ul className="list-disc pl-5 space-y-1 marker:text-primary">
-                <li>Pharmaceutical Repacking Division</li>
-                <li>Marketing Division</li>
-                <li>Chemical Division</li>
-                <li>Formulation Division</li>
-              </ul>
-              <a
-                href="#"
-                className="inline-block bg-primary text-white px-6 py-2 rounded-md font-medium shadow-md hover:shadow-lg hover:bg-primary-dark transition-all"
-              >
-                Read More
-              </a>
-            </div>
-          </motion.div>
+<motion.div
+  variants={fadeVariant}
+  className="bg-white/90 backdrop-blur-md p-7 rounded-xl shadow-lg"
+>
+  <div className="space-y-6 text-gray-700 leading-relaxed">
+    <h3 className="text-2xl font-bold text-gray-800">
+      About <span className="text-red-600">Agra Pharmaceuticals</span>
+    </h3>
+    <p>
+      Established in 2010, Agra Pharmaceuticals Private Limited is among the most admired healthcare
+      companies dedicated to improving lives through a wide range of products in the pharmaceutical,
+      medical device, and services sectors that span the continuum of care.
+    </p>
+    <p>
+      One of the fastest-growing healthcare companies, we take pride in offering high-quality trusted
+      products that treat pervasive and persistent health conditions around the world. We have a robust
+      quality assurance department which ensures that all the products developed and offered by us meet
+      highest standards and international guidelines.
+    </p>
+    <a
+      href="#"
+      className="inline-block bg-red-600 text-white px-6 py-2 rounded-md font-medium shadow-md hover:shadow-lg hover:bg-red-700 transition-all"
+    >
+      Read More
+    </a>
+  </div>
+</motion.div>
+
 
           {/* Right Image */}
           <motion.div variants={fadeVariant} className="relative group">
             <img
               src="A.png"
               alt="doctor"
-              className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-xl transition-transform duration-500 group-hover:scale-105 group-hover:brightness-105"
+              className="w-full h-[600px] md:h-[600px] object-cover rounded-xl shadow-xl transition-transform duration-500 group-hover:scale-105 group-hover:brightness-105"
             />
             <div className="absolute inset-0 rounded-xl bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </motion.div>
