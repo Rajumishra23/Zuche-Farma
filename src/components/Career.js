@@ -56,7 +56,7 @@ const Careers = () => {
         {/* Career Banner Image */}
         <div className="mb-16">
           <img
-            src="career.png"
+            src="career1.png"
             alt="Career Opportunities"
             className="w-full h-[400px] object-cover rounded-2xl shadow-xl"
           />
