@@ -7,6 +7,7 @@ import AgraIntro from '../components/AgraIntro';
 import PharmaServices from '../components/PharmaService';
 import Testimonials from '../components/Testimonial';
 import Cartificates from  '../components/Cartificates';
+import Blog from '../components/Blog';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <WhyChooseUs />
       <PharmaServices/>
       <Testimonials/>
+      <Blog/>
       <Cartificates/>
     </div>
   );
