@@ -77,16 +77,14 @@ const Header = () => {
 
       {/* 🔹 Main Header */}
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <NavLink
-          to="/"
-          className="flex items-center"
-          aria-label="Agra Pharma Home"
-        >
-          <img
-            src="Agra3.webp"
-            className="h-20 object-contain"
-            alt="Agra Pharma logo"
-          />
+        <NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
+          <div className="h-12 w-auto flex items-center">
+            <img
+              src="Agra3.webp"
+              className="h-20 w-auto object-contain -my-4"
+              alt="Agra Pharma logo"
+            />
+          </div>
         </NavLink>
 
         {/* 🔹 Desktop Nav */}
@@ -103,12 +101,7 @@ const Header = () => {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 )}
               </div>
@@ -140,39 +133,14 @@ const Header = () => {
         </nav>
 
         {/* 🔹 Mobile Menu Button */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-gray-700"
-        >
+        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-gray-700">
           {menuOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           )}
         </button>
@@ -185,9 +153,7 @@ const Header = () => {
             {menuItems.map((item, index) => (
               <li key={index} className="border-b border-gray-200">
                 <button
-                  onClick={() =>
-                    setOpenDropdown(openDropdown === index ? null : index)
-                  }
+                  onClick={() => setOpenDropdown(openDropdown === index ? null : index)}
                   className="w-full flex justify-between items-center px-4 py-3 text-gray-700 font-semibold"
                   aria-haspopup="true"
                   aria-expanded={openDropdown === index}
@@ -203,12 +169,7 @@ const Header = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
                 </button>

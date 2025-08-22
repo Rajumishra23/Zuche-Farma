@@ -1,6 +1,5 @@
 import React from 'react';
 import WhyChooseUs from './WhyChooseUs';
-import Contact from './Contact';
 import Header from '../components/Header';
 import Slider from '../components/Slider';
 import Video from '../components/Video';
@@ -20,7 +19,6 @@ const Home = () => {
       <PharmaServices/>
       <Testimonials/>
       <Cartificates/>
-      <Contact />
     </div>
   );
 };
