@@ -7,44 +7,44 @@ const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const menuItems = [
-  {
-    label: "About Us",
-    href: "/about",
-    subItems: [
-      { label: "About Agra", href: "/about#about" },
-      { label: "Mission & Vision", href: "/about#mission" },
-      { label: "Board of Directors", href: "/about#board" },
-      { label: "Business Model", href: "/about#business" },
-    ],
-  },
-  {
-    label: "Product Portfolio",
-    href: "/product",
-    subItems: [
-      { label: "Medical Devices", href: "/product/medical-devices" },
-      { label: "Pharmaceuticals", href: "/product/pharmaceuticals" },
-    ],
-  },
-  {
-    label: "Quality",
-    href: "/quality",
-    subItems: [
-      { label: "Quality Policy", href: "/quality/policy" },
-      { label: "Certifications & Approvals", href: "/quality/certificates" },
-    ],
-  },
-  { label: "Our Presence", href: "/worldwide" },
-  { label: "Events", href: "/event" },
-  { label: "Manufacturing Unit", href: "/manufactures" },
-  {
-    label: "Career",
-    href: "/career",
-    subItems: [
-      { label: "Growing with Agra", href: "/career#Grow2" },
-      { label: "Openings", href: "/career/openings" },
-    ],
-  },
-];
+    {
+      label: "About Us",
+      href: "/about",
+      subItems: [
+        { label: "About Agra", href: "/about#about" },
+        { label: "Mission & Vision", href: "/about#mission" },
+        { label: "Board of Directors", href: "/about#board" },
+        { label: "Business Model", href: "/about#business" },
+      ],
+    },
+    {
+      label: "Product Portfolio",
+      href: "/product",
+      subItems: [
+        { label: "Medical Devices", href: "/product/medical-devices" },
+        { label: "Pharmaceuticals", href: "/product/pharmaceuticals" },
+      ],
+    },
+    {
+      label: "Quality",
+      href: "/quality",
+      subItems: [
+        { label: "Quality Policy", href: "/quality/policy" },
+        { label: "Certifications & Approvals", href: "/quality/certificates" },
+      ],
+    },
+    { label: "Our Presence", href: "/worldwide" },
+    { label: "Events", href: "/event" },
+    { label: "Manufacturing Unit", href: "/manufactures" },
+    {
+      label: "Career",
+      href: "/career",
+      subItems: [
+        { label: "Growing with Agra", href: "/career#Grow2" },
+        { label: "Openings", href: "/career/openings" },
+      ],
+    },
+  ];
 
   const renderLink = (href, label, className = "") => {
     const isHash = href.includes("#");
@@ -73,21 +73,21 @@ const Header = () => {
         <p>📞123346767</p>
         <p>✉️ agrapharma@live.com</p>
       </div>
+<div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
+  {/* Left: Logo */}
+  <NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
+    <div className="h-14 w-auto flex items-center">
+      <img
+        src="AL.webp"
+        className="h-30 w-auto object-contain"
+        alt="Agra Pharma logo"
+      />
+    </div>
+  </NavLink>
 
-      {/* 🔹 Main Header */}
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
-          <div className="h-12 w-auto flex items-center">
-            <img
-              src="AL.webp"
-              className="h-40 w-auto object-contain -my-4"
-              alt="Agra Pharma logo"
-            />
-          </div>
-        </NavLink>
 
-        {/* 🔹 Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
+        {/* Center: NavLinks */}
+        <nav className="hidden md:flex flex-1 justify-center gap-8 text-sm font-semibold text-gray-700">
           {menuItems.map((item, index) => (
             <div key={index} className="relative group">
               <div className="flex items-end gap-1">
@@ -100,12 +100,17 @@ const Header = () => {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 )}
               </div>
 
-              {/* 🔹 Submenu (Desktop) */}
+              {/* Submenu (Desktop) */}
               {item.subItems && (
                 <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md py-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                   {item.subItems.map((subItem, subIndex) => (
@@ -121,18 +126,21 @@ const Header = () => {
               )}
             </div>
           ))}
-
-          {/* 🔹 Contact Button */}
-          <NavLink
-            to="/contact"
-            className="block w-full text-center px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow hover:bg-teal-700 transition"
-          >
-            Contact
-          </NavLink>
         </nav>
 
-        {/* 🔹 Mobile Menu Button */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-gray-700">
+        {/* Right: Contact Button */}
+        <NavLink
+          to="/contact"
+          className="hidden md:block px-5 py-2 bg-teal-600 text-white font-semibold rounded-full shadow hover:bg-teal-700 transition"
+        >
+          Contact
+        </NavLink>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-gray-700"
+        >
           {menuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -190,7 +198,7 @@ const Header = () => {
               </li>
             ))}
 
-            {/* 🔹 Mobile Contact Button */}
+            {/* Mobile Contact Button */}
             <li className="border-b border-gray-200 px-4 py-3">
               <NavLink
                 to="/contact"
