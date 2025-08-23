@@ -79,7 +79,7 @@ const Header = () => {
   <div className="h-14 w-auto flex items-center">
     <img
       src="AL.webp"
-      className="h-12 w-auto object-contain" // 🔹 yaha h-12 rakha (≈48px, Zuche jaisa)
+      className="h-24 w-auto object-contain" // 🔹 yaha h-12 rakha (≈48px, Zuche jaisa)
       alt="Agra Pharma logo"
     />
   </div>
