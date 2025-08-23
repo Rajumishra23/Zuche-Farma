@@ -75,15 +75,15 @@ const Header = () => {
       </div>
 <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
   {/* Left: Logo */}
-  <NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
-    <div className="h-14 w-auto flex items-center">
-      <img
-        src="AL.webp"
-        className="h-20 w-auto object-contain"
-        alt="Agra Pharma logo"
-      />
-    </div>
-  </NavLink>
+<NavLink to="/" className="flex items-center" aria-label="Agra Pharma Home">
+  <div className="h-14 w-auto flex items-center">
+    <img
+      src="AL.webp"
+      className="h-12 w-auto object-contain" // 🔹 yaha h-12 rakha (≈48px, Zuche jaisa)
+      alt="Agra Pharma logo"
+    />
+  </div>
+</NavLink>
 
 
         {/* Center: NavLinks */}
